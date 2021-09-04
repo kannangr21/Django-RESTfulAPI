@@ -1,0 +1,8 @@
+.venv
+.venv/
+RestApi/__pycache__
+RestApi/__pycache__/
+RestApi/.env
+RestApi/.env/
+users/__pycache__
+users/__pycache__/
