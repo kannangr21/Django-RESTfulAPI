@@ -14,11 +14,21 @@ This is an API developed using Django REST framework that creates an user and st
 `SECRET_KEY` in `RestApi/settings.py` is made as an Environment variable
 
 ## Working
+### The app can be tested using both API root (http://127.0.0.1:8000/) and website (index.html)
 - To start the server run `python3 manage.py runserver` if WSL/Linux and `python manage.py runserver` if cmd
 - Check http://127.0.0.1:8000 , which is API root page
 - `/users/` , `/content/` are the endpoints in the API
 
-### Endpoints
+## FrontEnd
+- After Starting the server manually open the `index.html` file.
+- This page serves as the frontend for the API 
+    1. to create, read users.
+    2. read the contents (posts).
+    3. Contents can be posted through the API page.
+- For updation, deletion and posting the content, the webpage redirects to the API page `http://127.0.0.1:8000/{end_points}/`.  
+- Javascript is used to send request and recieve responses from the API.
+
+## Endpoints
 - In `users` API root,  
 `/users/` retrives the existing data of all the users from the database `db.sqlite3`.  
 `/users/` can be used to create a user by sending a `POST` request which is available in the site.  
