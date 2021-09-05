@@ -7,7 +7,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('id','url','userName','password')
         extra_kwargs = {'password': {'write_only': True}}
 
-class ContentSerializer(serializers.HyperlinkedModelSerializer):
+class ContentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Content
         fields = ('id','url','img','caption','user_id')
