@@ -20,7 +20,7 @@ This is an API developed using Django REST framework that creates an user and st
 - `/users/` , `/content/` are the endpoints in the API
 
 ## FrontEnd
-- After Starting the server manually open the `index.html` file.
+- After Starting the server, manually open the `index.html` file.
 - This page serves as the frontend for the API 
     1. to create, read users.
     2. read the contents (posts).
